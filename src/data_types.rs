@@ -53,5 +53,13 @@ pub fn run_data_types(){
     println!("Animals {:?}", animals);
 
     let books = &[&"IT".to_string(), &"Sahih AlBukhari".to_string(), &"Muslim".to_string()];
-    println!("Books : {:?}", books)
+    println!("Books : {:?}", books);
+
+    // Strings Vs String Slices (&str)
+    // Strings [ growable, mutable, owned string type ]
+    let mut stone_cold:  String = String::from("Salam Aleykoum");    
+    println!("Original Message Says: {}", stone_cold);
+    stone_cold.push_str(" Ahlan");
+    println!("After Push Message Says: {}", stone_cold);
+
 }

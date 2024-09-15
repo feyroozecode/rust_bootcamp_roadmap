@@ -31,6 +31,9 @@ fn main() {
     println!("Frutis Array {:?}", fruits );
     
 
-
+    // Tuples
+    let human: (String, i32, bool) = ("Moussa".to_string(), 24, false);
     
+    println!("Himan tuple {:?}", human );
+
 }

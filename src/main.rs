@@ -36,4 +36,8 @@ fn main() {
     
     println!("Himan tuple {:?}", human );
 
+    let my_mix_tuples = ("Asma", 25, true, [2, 3, 4, 5]);
+
+    println!("My Mix tuples {:?}", my_mix_tuples);
+
 }

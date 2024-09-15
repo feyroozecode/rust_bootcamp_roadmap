@@ -1,5 +1,6 @@
 fn main() {
-    // primitive data types or scaller data types
+    
+    // Primitive data types or scaller data types
 
     // INTEGER
     let x: i32 = -45;
@@ -11,9 +12,17 @@ fn main() {
     let e: i32 = 214483647;
     let i: i64 = 9223372036854775807;
     
+    
     println!("Maximum value of i32: {}", e);
     println!("Maximum value of i64: {}", i);
 
+    // Double
+    let height:f64 = 34.5;
+    let weight: f64 = 19.5;
+
+    println!("The height is {}", height);
+    println!("The weight is {}", weight);
+    
     let is_snowing: bool = true;
 
     println!("It is snowing ? {}", is_snowing);
@@ -39,5 +48,14 @@ fn main() {
     let my_mix_tuples = ("Asma", 25, true, [2, 3, 4, 5]);
 
     println!("My Mix tuples {:?}", my_mix_tuples);
+
+    // Slices
+    let mumbers_slices: &[i32] = &[1,2,3,4,5];
+
+    println!("Number Slice: {:?}", mumbers_slices);
+
+    let animals: &[&str] = &["Cat", "Dog", "Elephan"];
+
+    println!("Animals {:?}", animals)
 
 }

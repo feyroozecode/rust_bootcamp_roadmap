@@ -36,7 +36,6 @@ pub fn run_data_types(){
     let fruits: [&str; 3] = ["Apple", "Banana", "Mango"];
     println!("Frutis Array {:?}", fruits );
     
-
     // Tuples
     let human: (String, i32, bool) = ("Moussa".to_string(), 24, false);
 

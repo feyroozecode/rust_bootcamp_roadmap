@@ -51,11 +51,11 @@ fn main() {
 
     // Slices
     let mumbers_slices: &[i32] = &[1,2,3,4,5];
-
     println!("Number Slice: {:?}", mumbers_slices);
 
     let animals: &[&str] = &["Cat", "Dog", "Elephan"];
+    println!("Animals {:?}", animals);
 
-    println!("Animals {:?}", animals)
-
+    let books = &[&"IT".to_string(), &"Sahih AlBukhari".to_string(), &"Muslim".to_string()];
+    println!("Books : {:?}", books)
 }

@@ -1,25 +1,19 @@
 use std::io;
 
-pub fn start_function(){
-    
-   get_icm();
-
-
-}
+pub fn start_function() { get_icm(); }
 
 
 fn get_icm() {
     let mut weight = String::new();
     let mut size   = String::new();
 
-    println!("Entreer votre poids en Kg :");
+    println!("Entree votre poids en Kg :");
     io::stdin().read_line(&mut weight).expect("Failed to readline");
 
-    println!("Entreer votre taille en M :");
+    println!("Entree votre taille en M :");
     io::stdin().read_line(&mut size).expect("Failed to readline");
 
-
-    println!("Calcul de l'ICM en cours ");
+    println!("Calcul de l'ICM en cours..");
 
     let weight = weight.trim().to_string();
     let size = size.trim().to_string();
@@ -47,6 +41,10 @@ fn get_icm() {
     println!("votre ICM avec l'entree de {} kg et {} m = {:.2}", weight, size, final_result)
 
 }
+//  Entree votre poids en Kg : 57
+//  Entree votre taille en M : 1.67
+// Calcul de l'ICM en cours..
+// votre ICM avec l'entree de 57 kg et 1.67 m = 20.44
 
 fn calculate_icm(weight: f64, size: f64) -> Result<f64, String> {
 
